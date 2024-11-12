@@ -1,0 +1,97 @@
+body{
+ background-color: palegreen;
+ font-family: "Josefin Sans", sans-serif;
+}
+
+#post-confession-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#confession-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+#sender-name, #message {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#message {
+    resize: vertical;
+    height: 100px;
+}
+
+#post-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
+#date-picker {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#confessions-container {
+    overflow-x: auto;
+    margin: 20px;
+}
+
+#confessions-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: aqua;
+}
+
+#confessions-table th, #confessions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#confessions-table th {
+    background-color: #f0f0f0;
+}
