@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/style/files/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<center>
+ <h1 style="background: linear-gradient(to right, blue, orange); 
+            border: 2px solid violet; 
+            border-radius: 10px; 
+            padding: 10px 20px; 
+            color: white;
+            width: 370px;">
+ GNHS CONFESSIONS
+</h1><br><br>
+
+
+</center>
+
+<button id="post-confession-btn">POST A CONFESSION</button>
+
+<div id="confession-popup" class="hidden">
+ <div class="popup-content">
+  <h2>Post Your Confession</h2>
+  <input type="text" id="sender-name" placeholder="Sender Name" required>
+  <textarea id="message" placeholder="Your Message (1-300 words)" required></textarea>
+  <button id="post-btn">POST</button>
+ </div>
+</div>
+
+<input id="date-picker" type="date" placeholder="Select Date">
+
+<div id="confessions-container">
+ <table id="confessions-table">
+  <thead>
+   <tr>
+    <th>DATE POSTED:</th>
+    <th>CONFESSION MESSAGE:</th>
+    <th>FROM:</th>
+   </tr>
+  </thead>
+  <tbody id="confessions-tbody">
+  </tbody>
+ </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
